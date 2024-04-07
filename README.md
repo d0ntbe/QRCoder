@@ -1,5 +1,6 @@
 # QRCoder
-QR generator for Mobile Security testing 
+QR generator for Mobile Security testing. 
+For QR gen uses this "github.com/skip2/go-qrcode". Thx! 
 
 
 USAGE:
