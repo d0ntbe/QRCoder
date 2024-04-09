@@ -26,6 +26,7 @@ Vulns:
 4) Fishing
 5) Banking: payment by details from
 6) Local SQLi (Android, IOS)
+7) Broken Object Level Authorization (Auth Bypass Mobile App, Read Local File) 
 
 Examples:
  
