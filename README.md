@@ -29,8 +29,8 @@ Vulns:
 
 Examples:
  
-appbank://link?https://www.p@yment.com/account=78127312936781&sum=100&cur=rub -> 
-![image](https://github.com/d0ntbe/QRCoder/assets/88555610/7bd23cb9-9108-456f-8d18-53e428cd8180)
-appbank://link?https://www.p@yment.com/account=youtubik.ev11il.com&sum=100&cur=rub
-![image](https://github.com/d0ntbe/QRCoder/assets/88555610/d566f0b2-a34f-4caf-b469-d07ee9f69f3d)
+appbank://link?https://www.p@yment.com/account=78127312936781&sum=100&cur=rub -> ![image](https://github.com/d0ntbe/QRCoder/assets/88555610/7bd23cb9-9108-456f-8d18-53e428cd8180)
+
+appbank://link?https://www.p@yment.com/account=youtubik.ev11il.com&sum=100&cur=rub -> ![image](https://github.com/d0ntbe/QRCoder/assets/88555610/d566f0b2-a34f-4caf-b469-d07ee9f69f3d)
+
 
