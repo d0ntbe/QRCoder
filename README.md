@@ -3,7 +3,7 @@ QR generator for Mobile Security testing.
 For QR gen uses this "github.com/skip2/go-qrcode". Thx! 
 
 
-USAGE:
+# USAGE:
 
 Example: go run main.go deeplink://aplication/api/v1/ppp
 
@@ -18,7 +18,7 @@ Payloads are in payloads.txt. But you can also add your specified payloads, line
 
 ![image](https://github.com/d0ntbe/QRCoder/assets/88555610/d6c7e865-2216-46bc-b04c-ae28a22e9730)
 
-Vulns: 
+# Vulns: 
 
 1) Open Redirect
 2) XSS
@@ -34,4 +34,27 @@ appbank://link?https://www.p@yment.com/account=78127312936781&sum=100&cur=rub ->
 
 appbank://link?https://www.p@yment.com/account=youtubik.ev11il.com&sum=100&cur=rub -> ![image](https://github.com/d0ntbe/QRCoder/assets/88555610/d566f0b2-a34f-4caf-b469-d07ee9f69f3d)
 
+
+# Also, for example, it could be intercepted by Frida. Firstly, u have to find out the right function in the code, wich works with QR-code data. 
+
+JS Code example for Frida:
+
+var frida = require('frida');
+
+function processQRCode(data) {
+console.log(data);
+}
+
+Interceptor.attach(Module.findExportByName('SOME_CLASS_LIB_or_SMTH', 'processQRCode'), {
+onEnter: function(args) {
+args[0] = 'superbank://ooooo?dsdsasd=<script>alert(1)</script>&dddaq=http://evil.com';  // your payload
+processQRCode(args);
+}
+});
+
+frida.spawn('com.example.app').then(session => {
+session.attach('SOME_CLASS_LIB_or_SMTH').then(() => {
+console.log('Attached to SOME_CLASS_LIB_or_SMTH');
+});
+});
 
