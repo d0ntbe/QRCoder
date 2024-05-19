@@ -37,8 +37,8 @@ appbank://link?https://www.p@yment.com/account=youtubik.ev11il.com&sum=100&cur=r
 
 # Also, for example, it could be intercepted by Frida. Firstly, u have to find out the right function in the code, wich works with QR-code data. 
 
-JS Code example for Frida:
-
+It works differently for different Apps. JS Code example for Frida:
+```
 var frida = require('frida');
 
 function processQRCode(data) {
@@ -57,4 +57,4 @@ session.attach('SOME_CLASS_LIB_or_SMTH').then(() => {
 console.log('Attached to SOME_CLASS_LIB_or_SMTH');
 });
 });
-
+```
