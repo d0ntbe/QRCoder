@@ -16,7 +16,10 @@ If use Windows - do not forgot double quotes. Example: QRCoder.exe "ddd://ooooo?
 Payloads are in payloads.txt. But you can also add your specified payloads, line by line.
 
 
+
 ![image](https://github.com/d0ntbe/QRCoder/assets/88555610/d6c7e865-2216-46bc-b04c-ae28a22e9730)
+
+![image](https://github.com/d0ntbe/QRCoder/assets/88555610/87700fcf-a2f9-479d-bd04-f51df0b03cdb)
 
 # Vulns: 
 
